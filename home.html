@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Formation&Flow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-[#3B578F]">
+
+  <!-- Header -->
+  <header class="bg-[#1677E6] text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">FORMATION&FLOW</h1>
+    <nav>
+      <ul class="flex gap-6 text-sm font-semibold">
+        <li><a href="home.html" class="hover:underline">Home</a></li>
+        <li><a href="blogentry1.html" class="hover:underline">Blog</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="p-6">
+    <section class="relative h-80 rounded-md overflow-hidden group mb-10">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center transition-all duration-300 group-hover:brightness-75"
+       style="background-image: url('sesko.jpg');">
+  </div>
+
+  <!-- Overlay Text -->
+  <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4 bg-black bg-opacity-30">
+    <h2 class="text-3xl font-bold mb-2">Will Benjamin Šeško Finally Join Manchester United?</h2>
+    <a href="blogentry1.html" class="bg-[#E6B109] hover:bg-[#E58802] text-[#3B578F] font-semibold px-6 py-2 rounded-md inline-block mt-4">Read More</a>
+  </div>
+</section>
+
+<section class="py-10">
+  <h2 class="text-2xl font-bold text-center mb-6">Latest Blog Posts</h2>
+    <div class="max-w-screen-xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="flex justify-between items-center border rounded-md p-4">
+          <div class="flex-1 pr-4">
+            <h3 class="font-bold text-xl mb-2">
+              <a href="blogentry1.html" class="hover:underline">Check Out Liverpool's New 2025/26 Home & Away Kits</a></h3>
+            <p class="text-sm text-gray-600 mb-4">August 1, 2025</p>
+            <p>Liverpool and adidas join forces once again for a timeless look with their new Home and Away kits for next season!</p>
+            <a href="#" class="text-[#1677E6] font-semibold mt-2 inline-block">Read More</a>
+          </div>
+
+          <img src="thekop.jpg"
+       alt="Liverpool"
+       class="w-40 h-40 object-cover rounded-md ml-4 flex-shrink-0" />
+        </article>
+
+        <article class="flex justify-between items-center border rounded-md p-4">
+          <div class="flex-1 pr-4">
+            <h3 class="font-bold text-xl mb-2">
+              <a href="blogentry1.html" class="hover:underline">Newcastle Declines Liverpool's Bid for Alexander Isak</a>
+            </h3>
+            <p class="text-sm text-gray-600 mb-4">August 1, 2025</p>
+            <p>Newcastle United reject Liverpool's £110m bid for the services of Alexander Isak.</p>
+            <a href="#" class="text-[#1677E6] font-semibold mt-2 inline-block">Read More</a>
+          </div>
+
+          <img src="isak.jpg"
+       alt="Isak"
+       class="w-40 h-40 object-cover rounded-md ml-4 flex-shrink-0" />
+        </article>
+
+        <article class="flex justify-between items-center border rounded-md p-4">
+          <div class="flex-1 pr-4">
+            <h3 class="font-bold text-xl mb-2">
+              <a href="blogentry1.html" class="hover:underline">Rashford Delights in Seoul Friendly</a>
+            </h3>
+            <p class="text-sm text-gray-600 mb-4">July 31, 2025</p>
+            <p>Marcus Rashford has his first minutes in a FC Barcelona outfit, snagging an assist in their 7-3 win at FC Seoul.</p>
+            <a href="#" class="text-[#1677E6] font-semibold mt-2 inline-block">Read More</a>
+          </div>
+
+          <img src="rashford2.jpeg"
+       alt="Rashford"
+       class="w-40 h-40 object-cover rounded-md ml-4 flex-shrink-0" />
+        </article>
+      </div>
+    </div>
+  </section>
+
+    <section class="py-10">
+      <h2 class="text-2xl font-bold text-center mb-6">Featured Categories</h2>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <span class="bg-[#13D0E5] text-white px-4 py-2 rounded-md font-semibold">International Football</span>
+        <span class="bg-[#1677E6] text-white px-4 py-2 rounded-md font-semibold">Premier League</span>
+        <span class="bg-[#3B578F] text-white px-4 py-2 rounded-md font-semibold">Champions League</span>
+        <span class="bg-[#E6B109] text-white px-4 py-2 rounded-md font-semibold">Interviews</span>
+      </div>
+    </section>
+
+    <section class="text-center bg-[#3B578F] text-white py-10">
+      <h2 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+      <p class="mb-6">Get weekly insights and match analysis.</p>
+      <form onsubmit="return validateForm()" class="flex flex-col items-center gap-4">
+        <input type="email" id="email" placeholder="Email Address" class="px-4 py-2 rounded-md text-black w-64" required />
+        <button type="submit" class="bg-[#E6B109] hover:bg-[#E58802] text-[#3B578F] font-semibold px-6 py-2 rounded-md">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1677E6] text-white text-center py-4">
+    <p>&copy; 2025 Formation&Flow</p>
+  </footer>
+
+  <!-- JavaScript for form validation -->
+  <script>
+    function validateForm() {
+      const email = document.getElementById('email').value;
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!regex.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+      alert("Thank you for subscribing!");
+      return true;
+    }
+  </script>
+</body>
+</html>
